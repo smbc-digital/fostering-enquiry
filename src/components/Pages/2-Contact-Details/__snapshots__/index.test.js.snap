@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExamplePage snapshot should render correctly 1`] = `
+exports[`ContactDetails snapshot should render correctly 1`] = `
 Array [
   <h1>
     Fostering Enquiry
@@ -19,18 +19,18 @@ Array [
   >
     <label
       className=""
-      htmlFor="firstName"
+      htmlFor="emailAddress"
     >
       Email address
     </label>
     <input
       aria-label="Email address"
       className=""
-      id="firstName"
+      id="emailAddress"
       inputMode={undefined}
       maxLength={undefined}
       min={undefined}
-      name="firstName"
+      name="emailAddress"
       onChange={[Function]}
       onKeyDown={[Function]}
       pattern={undefined}

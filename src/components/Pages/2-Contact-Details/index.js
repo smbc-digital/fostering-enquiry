@@ -6,22 +6,20 @@ import { getPageRoute } from '../../../helpers/pagehelper'
 
 export const ContactDetails = ({context: {onChange, emailAddress, phoneNumber, address}, history}) => {
     
-    const onSubmit = (event) => {
-		event.preventDefault()
-		history.push(getPageRoute(3))
-    }
-    
     return(
         <Fragment>
             <h1>Fostering Enquiry</h1>
             <h2>Start your fostering journey</h2>
             <p>Your contact information</p>
             <p>We'll use this contact information to get in touch about your enquiry</p>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={event => {
+                event.preventDefault()
+                history.push(getPageRoute(3))
+                }}>
                 <TextInputContainer
                     label='Email address'
                     value={emailAddress.value}
-                    id='firstName' 
+                    id='emailAddress' 
                     type='email'
                     onChange={onChange}
                 />

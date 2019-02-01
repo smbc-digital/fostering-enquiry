@@ -3,7 +3,7 @@ import { ContactDetails } from './index'
 import { getPageRoute } from '../../../helpers/pagehelper'
 import renderer from 'react-test-renderer'
 
-describe('ExamplePage', () => {
+describe('ContactDetails', () => {
     it('should call push on submit', () => {
         //Arrange
         const data = {
