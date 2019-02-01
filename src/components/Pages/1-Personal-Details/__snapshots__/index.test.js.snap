@@ -79,3 +79,117 @@ exports[`ExamplePage snapshot should render correctly 1`] = `
   </button>
 </form>
 `;
+
+exports[`PersonalDetails snapshot should render correctly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h1>
+    Start your fostering journey
+  </h1>
+  <h2>
+    Tell us about yourself
+  </h2>
+  <label
+    className=""
+    htmlFor="firstName"
+  >
+    First name
+  </label>
+  <input
+    aria-label="First name"
+    className=""
+    id="firstName"
+    inputMode={undefined}
+    maxLength="35"
+    min={undefined}
+    name="firstName"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    pattern={undefined}
+    type="text"
+    value="Harry"
+  />
+  <label
+    className=""
+    htmlFor="lastName"
+  >
+    Last name
+  </label>
+  <input
+    aria-label="Last name"
+    className=""
+    id="lastName"
+    inputMode={undefined}
+    maxLength="60"
+    min={undefined}
+    name="lastName"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    pattern={undefined}
+    type="text"
+    value="Potter"
+  />
+  <h3
+    className=""
+  >
+    Date of birth
+  </h3>
+  <fieldset
+    className="input-memorable-date"
+  >
+    <p>
+      For example, 23 7 1987
+    </p>
+    <div>
+      <label>
+        Day
+      </label>
+      <input
+        aria-label="day"
+        className=""
+        name="day"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        type="number"
+        value="31"
+      />
+    </div>
+    <div>
+      <label>
+        Month
+      </label>
+      <input
+        aria-label="month"
+        className=""
+        name="month"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        type="number"
+        value="7"
+      />
+    </div>
+    <div>
+      <label>
+        Year
+      </label>
+      <input
+        aria-label="year"
+        className=""
+        name="year"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        type="number"
+        value="1980"
+      />
+    </div>
+  </fieldset>
+  <button
+    className="button-primary"
+    disabled={false}
+    type="submit"
+  >
+    Next step
+  </button>
+</form>
+`;

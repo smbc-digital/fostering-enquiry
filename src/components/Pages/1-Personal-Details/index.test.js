@@ -1,42 +1,59 @@
 import { React, mount} from '../../../helpers/SetupTest'
-import { ExamplePage } from './index'
+import { PersonalDetails } from './index'
 import { getPageRoute } from '../../../helpers/pagehelper'
 import renderer from 'react-test-renderer'
+import moment from 'moment'
 
-describe('ExamplePage', () => {
+describe('PersonalDetails', () => {
     it('should call push on submit', () => {
         //Arrange
         const data = {
-            example: {
-                value: 'yes',
-                isValid: true
-            }
+            firstName: {
+				value:'Harry',
+				isValid: true
+			},
+			lastName: {
+				value:'Potter',
+				isValid: true
+			},
+			dob: {
+				value:moment('1980-07-31 00:00:00'),
+				isValid: true
+			}
         }
 
         const history = { push: jest.fn() }
-		const wrapper = mount(<ExamplePage context={data} history={history} />)
+		const wrapper = mount(<PersonalDetails context={data} history={history} />)
 
         //Act
         wrapper.find('form').simulate('submit')
 
 
         //Assert
-        expect(history.push).toHaveBeenCalledWith(getPageRoute(1))
+        expect(history.push).toHaveBeenCalledWith(getPageRoute(2))
     })
 
     describe('snapshot', () => {
 		it('should render correctly',() => { 
 			// Arrange
 			const data = {
-                example: {
-                    value: 'yes',
+                firstName: {
+                    value:'Harry',
+                    isValid: true
+                },
+                lastName: {
+                    value:'Potter',
+                    isValid: true
+                },
+                dob: {
+                    value:moment('1980-07-31 00:00:00'),
                     isValid: true
                 }
 			}
 		
 			// Act
 			const tree = renderer
-			.create(<ExamplePage context={data} />)
+			.create(<PersonalDetails context={data} />)
 			.toJSON()
 		
 			// Assert

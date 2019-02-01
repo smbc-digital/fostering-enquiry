@@ -1,57 +1,48 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import withContext from '../../WithContext'
-import { RadioInputsContainer, Button, AlertForm } from 'smbc-react-components'
+import { TextInputContainer, MemorableDateInputContainer, Button } from 'smbc-react-components'
 import { getPageRoute } from '../../../helpers/pagehelper'
+import moment from 'moment'
 
-export const ExamplePage = props => {
+export const PersonalDetails = props => {
 	const { context, history } = props
 	
 	const onSubmit = (event) => {
 		event.preventDefault()
-		if (context.example.value === 'yes') {
-			history.push(getPageRoute(1))
-		} else {
-			history.push(getPageRoute(1))
+			history.push(getPageRoute(2))
 		}
-	}
+	
 
 	return (
 		<Fragment>
 			<form onSubmit={onSubmit}>
-				<h1>Boilerplate</h1>
-				<h2>This is an example form</h2>
-				<AlertForm 
-					level="information" 
-					content="This is a boilerplate, enjoy!" 
-				/>
-				<RadioInputsContainer
-					onChange={context.onChange}
-					options={[{
-						label: 'Yes',
-						id: 'yes',
-						name: 'example',
-						value: 'yes'
-					},
-					{
-						label: 'No',
-						id: 'no',
-						name: 'example',
-						value: 'no'
-					}]}
-					value={context.example.value}
-					displayHeading={false}
-					legend='Go to next page?'
-				/>
-				<Button label="Next step" isValid={context.example.isValid} />
+				<h1>Start your fostering journey</h1>
+				<h2>Tell us about yourself</h2>
+				<TextInputContainer onChange={context.onChange} value={context.firstName.value} optional={false} maxLength='35' id='firstName' type='text' label='First name' />
+                <TextInputContainer onChange={context.onChange} value={context.lastName.value} optional={false} maxLength='60' id='lastName' type='text' label='Last name' />
+				<MemorableDateInputContainer
+						heading="Date of birth"
+						description="For example, 23 7 1987"
+						onChange={context.onChange}
+						name="dob"
+						optional={false}
+						value={context.dob.value}
+						customValidation={{
+							invalidAfterDate: moment().subtract(21, 'years'),
+							customValidationMessage: 'You must be over 21 to complete this form'
+						}}
+					/>
+
+				<Button label="Next step" isValid={context.firstName.isValid && context.lastName.isValid && context.dob.isValid} />
 			</form>
 		</Fragment>
 	)
 }
 
-ExamplePage.propTypes = {
+PersonalDetails.propTypes = {
 	context: PropTypes.object,
 	history: PropTypes.object
 }
 
-export default withContext(ExamplePage)
+export default withContext(PersonalDetails)
