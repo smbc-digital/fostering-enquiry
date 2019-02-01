@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>4/6</span>
+        <span class='fraction'>0/17</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>0/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>4/6</span>
+        <span class='fraction'>0/17</span>
       </div>
     </div>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -66,18 +66,78 @@
 21
 22
 23
-24</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -86,30 +146,60 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'isomorphic-fetch'
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import 'isomorphic-fetch'</span>
+<span class="cstat-no" title="statement not covered" >import Timeout from 'await-timeout'</span>
+<span class="cstat-no" title="statement not covered" >import sanitizeHtml from 'sanitize-html'</span>
 &nbsp;
-async function submitForm(context) {
-    const convertedContext = {}
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async function submitForm(context) {</span></span>
+    const <span class="cstat-no" title="statement not covered" >convertedContext = {}</span>
+    const <span class="cstat-no" title="statement not covered" >timeout = new Timeout()</span>
     
-    Object.keys(context).map(<span class="fstat-no" title="function not covered" >ke</span>y =&gt; {
+<span class="cstat-no" title="statement not covered" >    Object.keys(context).map(<span class="fstat-no" title="function not covered" >key =&gt; </span>{</span>
 <span class="cstat-no" title="statement not covered" >        if (context[key] !== undefined &amp;&amp; context[key].value !== undefined) {</span>
-<span class="cstat-no" title="statement not covered" >            convertedContext[key] = context[key].value</span>
+<span class="cstat-no" title="statement not covered" >            if(typeof context[key].value === 'object'){</span>
+<span class="cstat-no" title="statement not covered" >                convertedContext[key] = context[key].value</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >                convertedContext[key] = sanitizeHtml(context[key].value, {</span>
+                    allowedTags: [],
+                    allowedAttributes: {}
+                  })
+            }
         }
     })
 &nbsp;
-    const rawResponse = await fetch('/example/submit', {
-        method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(convertedContext)
-    })
+    var <span class="cstat-no" title="statement not covered" >doneConvertedContext = JSON.stringify(convertedContext)</span>
+    try {
+        const <span class="cstat-no" title="statement not covered" >result = await Promise.race([</span>
+            await fetch('/fostering-enquiry/submit', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json; charset=utf-8',
+                    'Content-Type': 'application/json; charset=utf-8'
+                },
+                body: doneConvertedContext
+            }),
+            timeout.set(10000, 'Timeout!')
+        ])
 &nbsp;
-    return rawResponse
+        const <span class="cstat-no" title="statement not covered" >responseObject = await result.text()</span>
+        const <span class="cstat-no" title="statement not covered" >jsonResponse = JSON.parse(responseObject)</span>
+        const <span class="cstat-no" title="statement not covered" >paymentUrl = jsonResponse.url</span>
+        const <span class="cstat-no" title="statement not covered" >caseId = jsonResponse.caseID</span>
+&nbsp;
+        return {
+            status: result.status,
+            url: paymentUrl,
+            caseId: caseId
+        }
+    }
+    catch (error) {
+        return {
+            status: 400
+        }
+    }
 }
 &nbsp;
 export default submitForm</pre></td></tr>
@@ -118,7 +208,7 @@ export default submitForm</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 01 2019 10:42:52 GMT+0000 (GMT Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 01 2019 10:56:24 GMT+0000 (GMT Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>
