@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -32,16 +32,16 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>1/1</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -64,17 +64,7 @@
 19
 20
 21
-22</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+22</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -84,22 +74,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, { Component } from 'react'</span>
-<span class="cstat-no" title="statement not covered" >import { Switch, Route } from 'react-router'</span>
-<span class="cstat-no" title="statement not covered" >import { getPageRoute } from '../../helpers/pagehelper'</span>
-<span class="cstat-no" title="statement not covered" >import { ErrorPage } from 'smbc-react-components'</span>
-<span class="cstat-no" title="statement not covered" >import PersonalDetails from '../Pages/1-Personal-Details'</span>
-<span class="cstat-no" title="statement not covered" >import ContactDetails from '../Pages/2-Contact-Details'</span>
-<span class="cstat-no" title="statement not covered" >import SubmitForm from '../Pages/3-Submit-Form'</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react'
+import { Switch, Route } from 'react-router'
+import { getPageRoute } from '../../helpers/pagehelper'
+import { ErrorPage } from 'smbc-react-components'
+// import PersonalDetails from '../Pages/1-Personal-Details'
+import ContactDetails from '../Pages/2-Contact-Details'
+// import SubmitForm from '../Pages/3-Submit-Form'
 &nbsp;
 class App extends Component {
     render() {
-<span class="cstat-no" title="statement not covered" >        return (</span>
+        return (
             &lt;Switch&gt;
-                &lt;Route exact path={getPageRoute(1)} component={ PersonalDetails } /&gt;
+                {/* &lt;Route exact path={getPageRoute(1)} component={ PersonalDetails } /&gt; */}
                 &lt;Route exact path={getPageRoute(2)} component={ ContactDetails } /&gt;
-                &lt;Route exact path={getPageRoute(3)} component={ SubmitForm } /&gt;
+                {/* &lt;Route exact path={getPageRoute(3)} component={ SubmitForm } /&gt; */}
                 &lt;Route exact path="/error" component={ ErrorPage } /&gt;
             &lt;/Switch&gt;
         )
@@ -112,7 +112,7 @@ export default App</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 01 2019 11:02:19 GMT+0000 (GMT Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 01 2019 13:07:32 GMT+0000 (GMT Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExamplePage snapshot should render correctly 1`] = `
+Array [
+  <h1>
+    Fostering Enquiry
+  </h1>,
+  <h2>
+    Start your fostering journey
+  </h2>,
+  <p>
+    Your contact information
+  </p>,
+  <p>
+    We'll use this contact information to get in touch about your enquiry
+  </p>,
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      className=""
+      htmlFor="firstName"
+    >
+      Email address
+    </label>
+    <input
+      aria-label="Email address"
+      className=""
+      id="firstName"
+      inputMode={undefined}
+      maxLength={undefined}
+      min={undefined}
+      name="firstName"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      pattern={undefined}
+      type="email"
+      value="Value"
+    />
+    <label
+      className=""
+      htmlFor="phoneNumber"
+    >
+      Phone number
+    </label>
+    <input
+      aria-label="Phone number"
+      className=""
+      id="phoneNumber"
+      inputMode={undefined}
+      maxLength={undefined}
+      min={undefined}
+      name="phoneNumber"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      pattern={undefined}
+      type="tel"
+      value="Value"
+    />
+    <label
+      className=""
+      htmlFor="addressLine1"
+    >
+      Address line 1
+    </label>
+    <input
+      aria-label="Address line 1"
+      className=""
+      id="addressLine1"
+      inputMode={undefined}
+      maxLength={undefined}
+      min={undefined}
+      name="addressLine1"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      pattern={undefined}
+      type="text"
+      value=""
+    />
+    <h3
+      aria-hidden="true"
+      className="optional"
+    >
+      Address line 2
+    </h3>
+    <p
+      className="optional"
+    >
+      (optional)
+    </p>
+    <label
+      className="optional sr-only"
+      htmlFor="addressLine2"
+    >
+      Address line 2 optional
+    </label>
+    <input
+      aria-label=""
+      className=""
+      id="addressLine2"
+      inputMode={undefined}
+      maxLength={undefined}
+      min={undefined}
+      name="addressLine2"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      pattern={undefined}
+      type="text"
+      value=""
+    />
+    <label
+      className=""
+      htmlFor="town"
+    >
+      Town
+    </label>
+    <input
+      aria-label="Town"
+      className=""
+      id="town"
+      inputMode={undefined}
+      maxLength={undefined}
+      min={undefined}
+      name="town"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      pattern={undefined}
+      type="text"
+      value=""
+    />
+    <label
+      className=""
+      htmlFor="postcode"
+    >
+      Postcode
+    </label>
+    <input
+      aria-label="Postcode"
+      className=""
+      id="postcode"
+      inputMode={undefined}
+      maxLength={undefined}
+      min={undefined}
+      name="postcode"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      pattern={undefined}
+      type="text"
+      value=""
+    />
+    <p>
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+         Use address finder 
+      </a>
+    </p>
+    <button
+      className="button-primary"
+      disabled={false}
+      id={undefined}
+      type="submit"
+    >
+      Next step
+    </button>
+  </form>,
+  <p>
+    <a
+      href="#"
+      onClick={[Function]}
+    >
+      Previous
+    </a>
+  </p>,
+]
+`;
