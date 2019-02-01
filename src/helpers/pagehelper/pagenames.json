@@ -1,6 +1,14 @@
 [
 	{
 		"number": 1,
-		"route": "/example/example-page"
+		"route": "/fostering-enquiry/personal-details"
+	},
+	{
+		"number": 2,
+		"route": "/fostering-enquiry/contact-details"
+	},
+	{
+		"number": 3,
+		"route": "/fostering-enquiry/submit"
 	}
 ]
