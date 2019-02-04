@@ -41,8 +41,8 @@ export class SubmitForm extends Component {
         return (
             <form onSubmit={this.onSubmit}>
                 <h1>Fostering Enquiry</h1>
-                <h2>Submit you form</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h2>Submit your form</h2>
+                <p>Now that you&apos;ve completed the form, use the button below to submit it.</p>
                 {displayRecaptcha &&
                     <div className="recaptcha">
                         <ReCAPTCHA

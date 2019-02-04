@@ -9,7 +9,7 @@ export const ContactDetails = ({context: {onChange, emailAddress, phoneNumber, a
         <Fragment>
             <h1>Fostering Enquiry</h1>
             <h2>Start your fostering journey</h2>
-            <p>Your contact information</p>
+            <h3>Your contact information</h3>
             <p>We&#x27;ll use this contact information to get in touch about your enquiry</p>
             <form onSubmit={event => {
                 event.preventDefault()
