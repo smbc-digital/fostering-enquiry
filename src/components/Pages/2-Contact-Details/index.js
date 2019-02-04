@@ -7,9 +7,8 @@ import { getPageRoute } from '../../../helpers/pagehelper'
 export const ContactDetails = ({context: {onChange, emailAddress, phoneNumber, address}, history}) => {
     return(
         <Fragment>
-            <h1>Fostering Enquiry</h1>
-            <h2>Start your fostering journey</h2>
-            <h3>Your contact information</h3>
+            <h1>Start your fostering journey</h1>
+            <h2>Your contact information</h2>
             <p>We&#x27;ll use this contact information to get in touch about your enquiry</p>
             <form onSubmit={event => {
                 event.preventDefault()

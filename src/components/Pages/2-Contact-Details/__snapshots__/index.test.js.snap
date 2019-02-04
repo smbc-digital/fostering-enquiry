@@ -3,14 +3,11 @@
 exports[`ContactDetails snapshot should render correctly 1`] = `
 Array [
   <h1>
-    Fostering Enquiry
+    Start your fostering journey
   </h1>,
   <h2>
-    Start your fostering journey
-  </h2>,
-  <h3>
     Your contact information
-  </h3>,
+  </h2>,
   <p>
     We'll use this contact information to get in touch about your enquiry
   </p>,

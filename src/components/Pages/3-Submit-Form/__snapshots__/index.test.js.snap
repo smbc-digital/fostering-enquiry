@@ -5,7 +5,7 @@ exports[`SubmitForm snapshot renders correctly 1`] = `
   onSubmit={[Function]}
 >
   <h1>
-    Fostering Enquiry
+    Start your fostering journey
   </h1>
   <h2>
     Submit your form
