@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">88.89% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>8/9</span>
+        <span class='fraction'>7/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">88.89% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>8/9</span>
+        <span class='fraction'>7/7</span>
       </div>
     </div>
   </div>
@@ -91,30 +91,19 @@
 46
 47
 48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+49</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -144,14 +133,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -160,67 +142,58 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import withContext from '../../WithContext'
-import { RadioInputsContainer, Button, AlertForm } from 'smbc-react-components'
+import { TextInputContainer, MemorableDateInputContainer, Button } from 'smbc-react-components'
 import { getPageRoute } from '../../../helpers/pagehelper'
+import moment from 'moment'
 &nbsp;
-export const ExamplePage = props =&gt; {
+export const PersonalDetails = props =&gt; {
 	const { context, history } = props
 	
 	const onSubmit = (event) =&gt; {
 		event.preventDefault()
-		<span class="missing-if-branch" title="else path not taken" >E</span>if (context.example.value === 'yes') {
-			history.push(getPageRoute(1))
-		} else {
-<span class="cstat-no" title="statement not covered" >			history.push(getPageRoute(1))</span>
+			history.push(getPageRoute(2))
 		}
-	}
+	
 &nbsp;
 	return (
 		&lt;Fragment&gt;
 			&lt;form onSubmit={onSubmit}&gt;
-				&lt;h1&gt;Boilerplate&lt;/h1&gt;
-				&lt;h2&gt;This is an example form&lt;/h2&gt;
-				&lt;AlertForm 
-					level="information" 
-					content="This is a boilerplate, enjoy!" 
-				/&gt;
-				&lt;RadioInputsContainer
-					onChange={context.onChange}
-					options={[{
-						label: 'Yes',
-						id: 'yes',
-						name: 'example',
-						value: 'yes'
-					},
-					{
-						label: 'No',
-						id: 'no',
-						name: 'example',
-						value: 'no'
-					}]}
-					value={context.example.value}
-					displayHeading={false}
-					legend='Go to next page?'
-				/&gt;
-				&lt;Button label="Next step" isValid={context.example.isValid} /&gt;
+				&lt;h1&gt;Start your fostering journey&lt;/h1&gt;
+				&lt;h2&gt;Tell us about yourself&lt;/h2&gt;
+				&lt;TextInputContainer onChange={context.onChange} value={context.firstName.value} optional={false} maxLength='35' id='firstName' type='text' label='First name' /&gt;
+                &lt;TextInputContainer onChange={context.onChange} value={context.lastName.value} optional={false} maxLength='60' id='lastName' type='text' label='Last name' /&gt;
+				&lt;MemorableDateInputContainer
+						heading="Date of birth"
+						description="For example, 23 7 1987"
+						onChange={context.onChange}
+						name="dob"
+						optional={false}
+						value={context.dob.value}
+						customValidation={{
+							invalidAfterDate: moment().subtract(21, 'years'),
+							customValidationMessage: 'You must be over 21 to complete this form'
+						}}
+					/&gt;
+&nbsp;
+				&lt;Button label="Next step" isValid={context.firstName.isValid &amp;&amp; context.lastName.isValid &amp;&amp; context.dob.isValid} /&gt;
 			&lt;/form&gt;
 		&lt;/Fragment&gt;
 	)
 }
 &nbsp;
-ExamplePage.propTypes = {
+PersonalDetails.propTypes = {
 	context: PropTypes.object,
 	history: PropTypes.object
 }
 &nbsp;
-export default withContext(ExamplePage)
+export default withContext(PersonalDetails)
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 01 2019 13:12:00 GMT+0000 (GMT Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Feb 04 2019 09:34:42 GMT+0000 (GMT Standard Time)
 </div>
 </div>
 <script src="..\..\..\prettify.js"></script>
