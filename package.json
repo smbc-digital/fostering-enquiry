@@ -9,6 +9,7 @@
 		"start": "webpack-dev-server --mode development --open",
 		"lint": "eslint src",
 		"build": "webpack --mode production",
+		"build:copy": "webpack --mode production && cp -r dist/. ",
 		"prepush": "echo 'Starting PrePush' && npm run test:coverage && npm run lint"
 	},
 	"author": "SMBC",
