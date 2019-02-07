@@ -1,26 +1,16 @@
-import { React, mount} from '../../../helpers/SetupTest'
-import { ErrorPage } from './index'
-import { getPageRoute } from '../../../helpers/pagehelper'
+import { React } from '../../../helpers/SetupTest'
+import { FailurePage } from './index'
 import renderer from 'react-test-renderer'
 
-describe('ErrorPage', () => {
-    it('should call push on submit', () => {
-        //Arrange
-        const history = { push: jest.fn() }
-		const wrapper = mount(<ErrorPage history={history} />)
-
-        //Act
-        wrapper.find('form').simulate('submit')
-
-        //Assert
-        expect(history.push).toHaveBeenCalledWith(getPageRoute(1))
-    })
-
+describe('FailurePage', () => {
     describe('snapshot', () => {
 		it('should render correctly',() => { 
+			// Arrange
+			const history = { block: jest.fn() }
+
 			// Act
 			const tree = renderer
-			.create(<ErrorPage />)
+			.create(<FailurePage history={history} />)
 			.toJSON()
 		
 			// Assert

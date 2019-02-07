@@ -13,7 +13,8 @@ describe('Success',() => {
 				value: '',
 			}
 		}
-		const wrapper = mount(<Success context={context} />)
+		const history = { block: jest.fn() }
+		const wrapper = mount(<Success context={context} history={history} />)
 		// Act
 
 		// Assert
@@ -28,7 +29,8 @@ describe('Success',() => {
 			},
 			receiptNumber: '1'
 		}
-		const wrapper = mount(<Success context={context} />)
+		const history = { block: jest.fn() }
+		const wrapper = mount(<Success context={context} history={history}/>)
 
 		// Act
 
