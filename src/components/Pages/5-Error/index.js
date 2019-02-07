@@ -15,7 +15,7 @@ export const ErrorPage = ({ history }) => {
                 <fieldset>
                     <h2>Why not?</h2>
                     <p>
-                    Follow the lay of the land. It's most important. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. What the devil. There's not a thing in the world wrong with washing your brush. That's why I paint - because I can create the kind of world I want - and I can make this world as happy as I want it.
+                    Follow the lay of the land. It&apos;s most important. And that&apos;s when it becomes fun - you don&apos;t have to spend your time thinking about what&apos;s happening - you just let it happen. What the devil. There&apos;s not a thing in the world wrong with washing your brush. That&apos;s why I paint - because I can create the kind of world I want - and I can make this world as happy as I want it.
                     </p>
                     <Button isValid={true} label="Start again" />
                 </fieldset>
