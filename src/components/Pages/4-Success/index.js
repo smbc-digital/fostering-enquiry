@@ -9,7 +9,8 @@ export class Success extends Component {
 
     constructor(props) {
         super(props)
-        this.props.context
+		props.history.block()
+        props.context
     }
 
     componentDidMount = () => {
@@ -42,6 +43,7 @@ export class Success extends Component {
 
 Success.propTypes = {
     context: PropTypes.object,
+    history: PropTypes.object
 }
 
 

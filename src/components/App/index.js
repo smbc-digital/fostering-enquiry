@@ -5,7 +5,7 @@ import PersonalDetails from '../Pages/1-Personal-Details'
 import ContactDetails from '../Pages/2-Contact-Details'
 import SubmitForm from '../Pages/3-Submit-Form'
 import Success from '../Pages/4-Success'
-import ErrorPage from '../Pages/5-Error'
+import FailurePage from '../Pages/5-Error'
 
 class App extends Component {
     render() {
@@ -15,7 +15,7 @@ class App extends Component {
                 <Route exact path={getPageRoute(2)} component={ ContactDetails } />
                 <Route exact path={getPageRoute(3)} component={ SubmitForm } />
                 <Route exact path={getPageRoute(4)} component={ Success } />
-                <Route exact path={getPageRoute(5)} component={ ErrorPage } />
+                <Route exact path={getPageRoute(5)} component={ FailurePage } />
             </Switch>
         )
     }
