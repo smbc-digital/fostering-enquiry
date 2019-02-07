@@ -26,7 +26,7 @@ exports[`SubmitForm snapshot renders correctly 1`] = `
       href="#"
       onClick={[Function]}
     >
-      Previous
+      Back
     </a>
   </p>
 </form>

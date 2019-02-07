@@ -45,7 +45,7 @@ export const ContactDetails = ({context: {onChange, emailAddress, phoneNumber, a
                     label='Next step' 
                 />
             </form>
-            <Anchor label='Previous' history={history} />
+            <Anchor label='Back' history={history} />
         </Fragment>
     )
 }
