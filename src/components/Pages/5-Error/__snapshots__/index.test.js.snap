@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage snapshot should render correctly 1`] = `
+Array [
+  <h1>
+    You can't start your fostering journey
+  </h1>,
+  <form
+    onSubmit={[Function]}
+  >
+    <fieldset>
+      <h2>
+        Why not?
+      </h2>
+      <p>
+        Follow the lay of the land. It's most important. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. What the devil. There's not a thing in the world wrong with washing your brush. That's why I paint - because I can create the kind of world I want - and I can make this world as happy as I want it.
+      </p>
+      <button
+        className="button-primary"
+        disabled={false}
+        id={undefined}
+        type="submit"
+      >
+        Start again
+      </button>
+    </fieldset>
+  </form>,
+]
+`;
