@@ -19,7 +19,7 @@ exports[`FailurePage snapshot should render correctly 1`] = `
     We're having some problems with this form
   </h2>
   <p>
-    We are working on it and the form will be back as soon as possible
+    We're working on it and the form will be back as soon as possible
   </p>
   <p>
     <a
