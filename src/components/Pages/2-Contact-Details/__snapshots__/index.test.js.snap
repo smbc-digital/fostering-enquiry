@@ -2,9 +2,7 @@
 
 exports[`ContactDetails snapshot should render correctly 1`] = `
 Array [
-  <h1>
-    Start your fostering journey
-  </h1>,
+  <h1 />,
   <h2>
     Your contact information
   </h2>,

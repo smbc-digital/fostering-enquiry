@@ -17,7 +17,7 @@ export const PersonalDetails = props => {
 	return (
 		<Fragment>
 			<form onSubmit={onSubmit}>
-				<h1>Start your fostering journey</h1>
+				<h1>{context.formHeader}</h1>
 				<h2>Tell us about yourself</h2>
 				<TextInputContainer onChange={context.onChange} value={context.firstName.value} optional={false} maxLength='35' id='firstName' type='text' label='First name' />
                 <TextInputContainer onChange={context.onChange} value={context.lastName.value} optional={false} maxLength='60' id='lastName' type='text' label='Last name' />

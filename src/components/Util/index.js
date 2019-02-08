@@ -22,7 +22,7 @@ async function submitForm(context) {
     var doneConvertedContext = JSON.stringify(convertedContext)
     try {
         const result = await Promise.race([
-            await fetch('/fostering-enquiry/submit', {
+            await fetch('/contact-the-fostering-team/submit', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json; charset=utf-8',

@@ -37,10 +37,10 @@ export class SubmitForm extends Component {
 
     render() {
         const { isLoading, recaptchaValid, } = this.state
-        const { context: { displayRecaptcha }, history } = this.props
+        const { context: { displayRecaptcha, formHeader }, history } = this.props
         return (
             <form onSubmit={this.onSubmit}>
-				<h1>Start your fostering journey</h1>
+				<h1>{formHeader}</h1>
                 <h2>Submit your form</h2>
                 <p>Now that you&apos;ve completed the form, use the button below to submit it.</p>
                 {displayRecaptcha &&

@@ -97,7 +97,7 @@ describe('submitForm', () => {
         fetch.mockResponse(JSON.stringify(expectedResult))
 
         await expect(submitForm(data))
-        expect(fetch).toHaveBeenCalledWith('/fostering-enquiry/submit', expect.anything())
+        expect(fetch).toHaveBeenCalledWith('/contact-the-fostering-team/submit', expect.anything())
     })
 
 

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import withContext from '../../WithContext'
 import { ErrorPage } from 'smbc-react-components'
 
-export const FailurePage = ({ history }) => {
+export const FailurePage = ({ history, context }) => {
     return(
         <ErrorPage 
-            title="Fostering enquiry"
+            title={context.formHeader}
             link={{
                 location: '/',
                 text: 'Start again' 

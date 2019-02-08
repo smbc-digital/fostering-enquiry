@@ -5,7 +5,7 @@ exports[`FailurePage snapshot should render correctly 1`] = `
   className="system-failure"
 >
   <h1>
-    Fostering enquiry
+    Contact the fostering team
   </h1>
   <div
     className="icon"

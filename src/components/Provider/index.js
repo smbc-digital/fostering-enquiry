@@ -6,6 +6,7 @@ class Provider extends Component{
 	constructor(props){
 		super(props)
 		this.state = {
+			formHeader: 'Contact the fostering team',
 			firstName: {
 				value:'',
 				isValid: false
