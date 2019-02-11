@@ -4,64 +4,61 @@ import withContext from '../../WithContext'
 import showBreadCrumbs from '../../../helpers/breadcrumbHelper'
 
 export class Success extends Component {
-  constructor(props) {
-    super(props)
-    props.history.block()
-    props.context
-  }
+	constructor(props) {
+		super(props)
+		props.history.block()
+		props.context
+	}
 
-  componentDidMount = () => {
-    showBreadCrumbs(true)
-  };
+	componentDidMount = () => {
+		showBreadCrumbs(true)
+	}
 
-  render() {
-    const { crmCaseReference, formHeader } = this.props.context
+	render() {
+		const { crmCaseReference, formHeader } = this.props.context
 
-    return (
-      <Fragment>
-        <section className="header-container">
-          <h1>{formHeader}</h1>
-          <p className="h2">Thanks for getting in touch</p>        
-          <p><strong>Your reference number is:</strong> {crmCaseReference}</p>
-        </section>
-
-        <p>
-          Please keep this number safe as you&apos;ll need it for the next step.
-          You&apos;ll also receive an email with this information.
-        </p>
-        <h2>What happens next</h2>
-        <p>
-          We start with a vision in our heart, and we put it on canvas. Maybe,
-          just to play a little, we&#39;ll put a little tree here. Everything is
-          happy if you choose to make it that way. Let the paint work. Maybe
-          there&#39;s a happy little bush that lives right there.
-        </p>
-        <p>
-          See there, told you that would be easy. Let&#39;s build an almighty
-          mountain. If you don&#39;t think every day is a good day - try missing
-          a few. You&#39;ll see. It&#39;s important to me that you&#39;re happy.
-        </p>
-        <p>
-          <a
-            className="button-primary"
-            href="https://myaccount.stockport.gov.uk/"
-          >
-            Find more fostering events
-          </a>
-        </p>
-        <p>
-          <a className="button-secondary" href="https://www.stockport.gov.uk/">
-            Back to fostering pages
-          </a>
-        </p>
-      </Fragment>
-    )
-  }
+		return (
+			<Fragment>
+				<section className="header-container">
+					<h1>{formHeader}</h1>
+					<p className="h2">Thanks for getting in touch</p>
+					<p>
+						<strong>Your case number is {crmCaseReference}</strong>
+					</p>
+				</section>
+				<section className="body-container">
+					<p>Keep this number safe as you might need it if you want to contact us.</p>
+					<h2>What happens next</h2>
+					<p>
+						Our fostering team will call you within 1 to 2 working days. You&#39;ll be able to tell them a bit
+						more about yourself and they&#39;ll answer any questions that you might have.
+					</p>
+					<p>
+						To find out more about fostering with us, you can come to one of our open evenings which take place
+						each month. Open evenings are a great opportunity to:
+					</p>
+					<p>
+						<ul>
+							<li>talk to us and ask questions</li>
+							<li>meet our fostering champions</li>
+							<li>meet other people who are starting their fostering journey</li>
+						</ul>
+					</p>
+					<p>You can find information about our open evenings using the button below.</p>
+					<p>
+						<a className="button-primary" href="https://www.stockport.gov.uk/events/?tag=Fostering">
+							Find fostering events
+						</a>
+					</p>
+				</section>
+			</Fragment>
+		)
+	}
 }
 
 Success.propTypes = {
-  context: PropTypes.object,
-  history: PropTypes.object
+	context: PropTypes.object,
+	history: PropTypes.object
 }
 
 export default withContext(Success)
