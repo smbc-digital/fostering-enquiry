@@ -33,6 +33,7 @@ export const ContactDetails = ({context: {onChange, emailAddress, phoneNumber, a
                     address={address.value}
                     automaticLabel={'Enter the postcode'}
                     automaticTextLabel={'Select the address below'}
+                    manualLabel={'Enter the address'}
                     useStockportPostcode={true}
                     enableHeading={false}
                     onChange={onChange}
