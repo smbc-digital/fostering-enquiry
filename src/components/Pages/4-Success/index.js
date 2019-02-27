@@ -15,24 +15,23 @@ export class Success extends Component {
 	}
 
 	render() {
-		const { crmCaseReference, formHeader } = this.props.context
+		const { formHeader } = this.props.context
 
 		return (
 			<Fragment>
 				<section className="header-container">
 					<h1>{formHeader}</h1>
-					<p className="h2">Thanks for getting in touch</p>
-					<p>
-						<strong>Your case number is {crmCaseReference}</strong>
-					</p>
+					<p className="h2">We&#39;ve received your contact details</p>
+					<p>Thanks for contacting our fostering team</p>
 				</section>
 				<section className="body-container">
-					<p>Keep this number safe as you might need it if you want to contact us.</p>
 					<h2>What happens next</h2>
+					<p>You&#39;ll receive a confirmation email with a link to our fostering information booklet. </p>
 					<p>
 						Our fostering team will call you within 1 to 2 working days. You&#39;ll be able to tell them a bit
 						more about yourself and they&#39;ll answer any questions that you might have.
 					</p>
+					<h2>Come to a fostering open evening</h2>
 					<p>
 						To find out more about fostering with us, you can come to one of our open evenings which take place
 						each month. Open evenings are a great opportunity to:
@@ -47,7 +46,7 @@ export class Success extends Component {
 					<p>You can find information about our open evenings using the button below.</p>
 					<p>
 						<a className="button-primary" href="https://www.stockport.gov.uk/events/?tag=Fostering">
-							Find fostering events
+							Find fostering open evenings and events
 						</a>
 					</p>
 				</section>
