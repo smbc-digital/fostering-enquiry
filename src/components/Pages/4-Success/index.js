@@ -22,7 +22,7 @@ export class Success extends Component {
 				<section className="header-container">
 					<h1>{formHeader}</h1>
 					<p className="h2">We&#39;ve received your contact details</p>
-					<p>Thanks for contacting our fostering team</p>
+					<p className="h3">Thanks for contacting our fostering team</p>
 				</section>
 				<section className="body-container">
 					<h2>What happens next</h2>
