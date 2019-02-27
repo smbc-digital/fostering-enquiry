@@ -52,6 +52,12 @@ Array [
       type="tel"
       value="Value"
     />
+    <h3
+      aria-hidden="true"
+      className={undefined}
+    >
+      Enter the address
+    </h3>
     <label
       className=""
       htmlFor="addressLine1"
