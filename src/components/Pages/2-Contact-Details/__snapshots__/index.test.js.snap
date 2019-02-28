@@ -56,7 +56,7 @@ Array [
       aria-hidden="true"
       className={undefined}
     >
-      Enter the address manually
+      Enter your address manually
     </h3>
     <label
       className=""

@@ -31,7 +31,7 @@ export const ContactDetails = ({context: {onChange, emailAddress, phoneNumber, a
                 <AddressPicker
                     name='address'
                     address={address.value}
-                    automaticLabel='Enter the postcode'
+                    automaticLabel='Enter your postcode'
                     automaticTextLabel='Select the address below'
                     useStockportPostcode={true}
                     enableHeading={false}
@@ -39,7 +39,7 @@ export const ContactDetails = ({context: {onChange, emailAddress, phoneNumber, a
                     useVerintLookup={true}
                     shouldDisplayManualSearch={false}
                     showManualOption={true}
-                    manualLabel='Enter the address manually'
+                    manualLabel='Enter your address manually'
                     automaticDescription='If it&#39;s not a Stockport postcode, please enter the address manually below.'
                 />
                 <Button 
