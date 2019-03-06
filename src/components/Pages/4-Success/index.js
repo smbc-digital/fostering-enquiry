@@ -15,13 +15,11 @@ export class Success extends Component {
 	}
 
 	render() {
-		const { formHeader } = this.props.context
 
 		return (
 			<Fragment>
 				<section className="header-container">
-					<h1>{formHeader}</h1>
-					<p className="h2">We&#39;ve received your contact details</p>
+					<h1>We&#39;ve received your contact details</h1>
 					<p className="h3">Thanks for contacting our fostering team</p>
 				</section>
 				<section className="body-container">
