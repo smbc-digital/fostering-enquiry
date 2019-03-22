@@ -57,7 +57,7 @@ export class SubmitForm extends Component {
                     isLoading={isLoading}
                     isValid={recaptchaValid || !displayRecaptcha}
                 />
-                <Anchor label='Back' history={history} />
+                <Anchor label='Previous' history={history} />
             </form>
         )
     }
