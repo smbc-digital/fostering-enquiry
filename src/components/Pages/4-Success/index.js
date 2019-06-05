@@ -19,7 +19,7 @@ export class Success extends Component {
 			<Fragment>
 				<section className="header-container">
 					<h1>We&#39;ve received your contact details</h1>
-					<p className="h2">Thanks for contacting our fostering team</p>
+					<p className="h2">Thank you for contacting our fostering team</p>
 				</section>
 				<section className="body-container">
 					<h2>What happens next</h2>
@@ -40,7 +40,7 @@ export class Success extends Component {
 							<li>meet other people who are starting their fostering journey</li>
 						</ul>
 					</p>
-					<p>You can find information about our open evenings using the button below.</p>
+					<p>Use the button below to find information about our open evenings.</p>
 					<p>
 						<a className="button-primary" href="https://www.stockport.gov.uk/events/?tag=Fostering">
 							Find fostering open evenings and events

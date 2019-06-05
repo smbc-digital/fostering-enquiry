@@ -40,7 +40,7 @@ export const ContactDetails = ({context: {onChange, emailAddress, phoneNumber, a
                     shouldDisplayManualSearch={false}
                     showManualOption={true}
                     manualLabel='Enter your address manually'
-                    automaticDescription='If you don&#39;t have a Stockport postcode, enter you address manually below'
+                    automaticDescription='If you don&#39;t have a Stockport postcode, enter your address manually below'
                 />
                 <Button 
                     isValid={ address.isValid && address.isValid && phoneNumber.isValid && emailAddress.isValid } 
