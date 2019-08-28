@@ -19,14 +19,11 @@ exports[`FailurePage snapshot should render correctly 1`] = `
     We're having some problems with this form
   </h2>
   <p>
-    We're working on it and the form will be back as soon as possible
-  </p>
-  <p>
     <a
-      className="button-primary"
-      href="/"
+      className="button-primary no-margin-bottom"
+      href="https://www.stockport.gov.uk/"
     >
-      Start again
+      Go back to the homepage
     </a>
   </p>
 </div>

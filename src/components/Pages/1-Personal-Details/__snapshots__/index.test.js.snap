@@ -16,6 +16,7 @@ exports[`PersonalDetails snapshot should render correctly 1`] = `
   </label>
   <input
     aria-label="First name"
+    aria-live="off"
     className=""
     id="firstName"
     inputMode={undefined}
@@ -36,6 +37,7 @@ exports[`PersonalDetails snapshot should render correctly 1`] = `
   </label>
   <input
     aria-label="Last name"
+    aria-live="off"
     className=""
     id="lastName"
     inputMode={undefined}
@@ -106,6 +108,7 @@ exports[`PersonalDetails snapshot should render correctly 1`] = `
     className="button-primary"
     disabled={false}
     id={undefined}
+    onClick={undefined}
     type="submit"
   >
     Next step

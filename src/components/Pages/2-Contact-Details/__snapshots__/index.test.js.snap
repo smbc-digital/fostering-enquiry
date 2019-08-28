@@ -20,6 +20,7 @@ Array [
     </label>
     <input
       aria-label="Email address"
+      aria-live="off"
       className=""
       id="emailAddress"
       inputMode={undefined}
@@ -40,6 +41,7 @@ Array [
     </label>
     <input
       aria-label="Phone number"
+      aria-live="off"
       className=""
       id="phoneNumber"
       inputMode={undefined}
@@ -66,6 +68,7 @@ Array [
     </label>
     <input
       aria-label="Address line 1"
+      aria-live="off"
       className=""
       id="addressLine1"
       inputMode={undefined}
@@ -97,6 +100,7 @@ Array [
     </label>
     <input
       aria-label=""
+      aria-live=""
       className=""
       id="addressLine2"
       inputMode={undefined}
@@ -117,6 +121,7 @@ Array [
     </label>
     <input
       aria-label="Town"
+      aria-live="off"
       className=""
       id="town"
       inputMode={undefined}
@@ -137,6 +142,7 @@ Array [
     </label>
     <input
       aria-label="Postcode"
+      aria-live="off"
       className=""
       id="postcode"
       inputMode={undefined}
@@ -161,6 +167,7 @@ Array [
       className="button-primary"
       disabled={false}
       id={undefined}
+      onClick={undefined}
       type="submit"
     >
       Next step
