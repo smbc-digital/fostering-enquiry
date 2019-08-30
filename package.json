@@ -24,7 +24,7 @@
     "react-google-recaptcha": "^0.14.2",
     "react-router": "^4.3.1",
     "sanitize-html": "^1.20.1",
-    "smbc-react-components": "^4.1.112"
+    "smbc-react-components": "^4.1.114"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
