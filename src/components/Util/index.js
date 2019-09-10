@@ -1,10 +1,8 @@
 import 'isomorphic-fetch'
-import Timeout from 'await-timeout'
 import sanitizeHtml from 'sanitize-html'
 
 async function submitForm(context) {
     const convertedContext = {}
-    const timeout = new Timeout()
     
     Object.keys(context).map(key => {
         if (context[key] !== undefined && context[key].value !== undefined) {
@@ -30,7 +28,9 @@ async function submitForm(context) {
                 },
                 body: doneConvertedContext
             }),
-            timeout.set(10000, 'Timeout!')
+            new Promise((resolve, reject) => {
+                setTimeout(() => reject(new Error('Timeout')), 10000)
+            })
         ])
 
         const responseObject = await result.text()
