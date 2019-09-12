@@ -9,7 +9,7 @@ exports[`PersonalDetails snapshot should render correctly 1`] = `
     Tell us about yourself
   </h2>
   <label
-    className=""
+    className={undefined}
     htmlFor="firstName"
   >
     First name
@@ -30,7 +30,7 @@ exports[`PersonalDetails snapshot should render correctly 1`] = `
     value="Harry"
   />
   <label
-    className=""
+    className={undefined}
     htmlFor="lastName"
   >
     Last name
