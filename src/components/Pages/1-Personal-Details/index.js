@@ -19,8 +19,8 @@ export const PersonalDetails = props => {
 			<form onSubmit={onSubmit}>
 				<h1>{context.formHeader}</h1>
 				<h2>Tell us about yourself</h2>
-				<TextInputContainer onChange={context.onChange} value={context.firstName.value} optional={false} maxLength='35' id='firstName' type='text' label='First name' />
-                <TextInputContainer onChange={context.onChange} value={context.lastName.value} optional={false} maxLength='60' id='lastName' type='text' label='Last name' />
+				<TextInputContainer onChange={context.onChange} value={context.firstName.value} optional={false} maxLength={35} id='firstName' type='text' label='First name' />
+                <TextInputContainer onChange={context.onChange} value={context.lastName.value} optional={false} maxLength={60} id='lastName' type='text' label='Last name' />
 				<MemorableDateInputContainer
 						heading="Date of birth"
 						description="For example, 23 7 1987"

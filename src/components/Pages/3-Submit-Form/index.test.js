@@ -71,9 +71,12 @@ describe('SubmitForm', () => {
 		const context = {
             displayRecaptcha: true
         }
+        const history = {
+            push: jest.fn()
+        }
 
         // Act
-        const wrapper = mount(<SubmitForm context={context}/>)
+        const wrapper = mount(<SubmitForm context={context} history={history} />)
 
         wrapper.setState({ recaptchaValid: true })
 
@@ -88,9 +91,12 @@ describe('SubmitForm', () => {
 		const context = {
             displayRecaptcha: false
         }
+        const history = {
+            push: jest.fn()
+        }
 
         // Act
-        const wrapper = mount(<SubmitForm context={context}/>)
+        const wrapper = mount(<SubmitForm context={context} history={history} />)
 
         wrapper.setState({ recaptchaValid: false })
 
@@ -138,9 +144,12 @@ describe('SubmitForm', () => {
                 recaptchaValid: false,
                 isLoading: false
             }
+            const history = {
+                push: jest.fn()
+            }
     
             const tree = renderer
-                .create(<SubmitForm context={context} />)
+                .create(<SubmitForm context={context} history={history} />)
                 .toJSON()
             expect(tree).toMatchSnapshot()
         })

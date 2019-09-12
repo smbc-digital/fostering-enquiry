@@ -56,95 +56,25 @@ Array [
     />
     <h3
       aria-hidden={true}
-      className={undefined}
+      className={false}
     >
-      Enter your address manually
-    </h3>
-    <label
-      className={undefined}
-      htmlFor="addressLine1"
-    >
-      Address line 1
-    </label>
-    <input
-      aria-label="Address line 1"
-      aria-live="off"
-      className=""
-      id="addressLine1"
-      inputMode={undefined}
-      maxLength={undefined}
-      min={undefined}
-      name="addressLine1"
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      pattern={undefined}
-      type="text"
-      value=""
-    />
-    <h3
-      aria-hidden={true}
-      className="optional"
-    >
-      Address line 2
+      Enter your postcode
     </h3>
     <p
-      aria-hidden={true}
-      className="optional"
+      className="description"
     >
-      (optional)
+      If you don't have a Stockport postcode, enter your address manually below
     </p>
     <label
-      className="optional sr-only"
-      htmlFor="addressLine2"
-    >
-      Address line 2 optional
-    </label>
-    <input
-      aria-label={undefined}
-      aria-live={undefined}
-      className=""
-      id="addressLine2"
-      inputMode={undefined}
-      maxLength={undefined}
-      min={undefined}
-      name="addressLine2"
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      pattern={undefined}
-      type="text"
-      value=""
-    />
-    <label
-      className={undefined}
-      htmlFor="town"
-    >
-      Town
-    </label>
-    <input
-      aria-label="Town"
-      aria-live="off"
-      className=""
-      id="town"
-      inputMode={undefined}
-      maxLength={undefined}
-      min={undefined}
-      name="town"
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      pattern={undefined}
-      type="text"
-      value=""
-    />
-    <label
-      className={undefined}
+      className="sr-only"
       htmlFor="postcode"
     >
-      Postcode
+      Enter your postcode
     </label>
     <input
-      aria-label="Postcode"
+      aria-label="Enter your postcode"
       aria-live="off"
-      className=""
+      className=" address-picker-input"
       id="postcode"
       inputMode={undefined}
       maxLength={undefined}
@@ -156,12 +86,20 @@ Array [
       type="text"
       value=""
     />
+    <button
+      className="button-secondary"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Find the address
+    </button>
     <p>
       <a
+        className="anchor-as-block"
         href="#"
         onClick={[Function]}
       >
-         Use address finder 
+        Enter the address manually
       </a>
     </p>
     <button

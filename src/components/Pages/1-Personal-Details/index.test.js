@@ -2,7 +2,6 @@ import { React, mount} from '../../../helpers/SetupTest'
 import { PersonalDetails } from './index'
 import { getPageRoute } from '../../../helpers/pagehelper'
 import renderer from 'react-test-renderer'
-import moment from 'moment'
 
 describe('PersonalDetails', () => {
     it('should call push on submit', () => {
@@ -17,9 +16,10 @@ describe('PersonalDetails', () => {
 				isValid: true
 			},
 			dob: {
-				value:moment('1980-07-31 00:00:00'),
+				value: '1980-07-31 00:00:00',
 				isValid: true
-			}
+            },
+            onChange: jest.fn()
         }
 
         const history = { push: jest.fn() }
@@ -46,14 +46,18 @@ describe('PersonalDetails', () => {
                     isValid: true
                 },
                 dob: {
-                    value:moment('1980-07-31 00:00:00'),
+                    value: '1980-07-31 00:00:00',
                     isValid: true
-                }
-			}
+                },
+                onChange: jest.fn()
+            }
+            const history = {
+                push: jest.fn()
+            }
 		
 			// Act
 			const tree = renderer
-			.create(<PersonalDetails context={data} />)
+			.create(<PersonalDetails context={data} history={history} />)
 			.toJSON()
 		
 			// Assert
