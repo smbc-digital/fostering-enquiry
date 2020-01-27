@@ -13,7 +13,6 @@ Array [
     onSubmit={[Function]}
   >
     <label
-      className={undefined}
       htmlFor="emailAddress"
     >
       Email address
@@ -34,7 +33,6 @@ Array [
       value="Value"
     />
     <label
-      className={undefined}
       htmlFor="phoneNumber"
     >
       Phone number
@@ -56,7 +54,6 @@ Array [
     />
     <h3
       aria-hidden={true}
-      className={false}
     >
       Enter your postcode
     </h3>
