@@ -32,8 +32,7 @@ export class Success extends Component {
 					</p>
 					<h2>Come to a fostering event</h2>
 					<p>
-						To find out more about fostering with us, you can come to one of our open evenings which take place
-						each month. Open evenings are a great opportunity to:
+						To find out more about fostering with us, you can come to one of our regular information sessions. These are a great opportunity to:
 					</p>
 					<p>
 						<ul>
