@@ -22,7 +22,7 @@
     "react-dom": "^16.9.0",
     "react-google-recaptcha": "^1.1.0",
     "react-router": "^4.3.1",
-    "sanitize-html": "^1.20.1",
+    "sanitize-html": "^2.3.2",
     "smbc-react-components": "^4.2.3"
   },
   "devDependencies": {
